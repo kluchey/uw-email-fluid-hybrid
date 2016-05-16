@@ -41,8 +41,17 @@ Margin: 0 auto;
 .inner {
 padding: 10px;
 }
+
+.one-column .inner {
+    padding-left: 13%;
+    padding-right: 13%;
+}
 p {
     Margin: 0;
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 a {
     color: #ee6a56;
@@ -67,6 +76,44 @@ a {
     font-size: 14px;
     Margin-bottom: 10px;
 }
+
+/*Two column layout*/
+.two-column {
+text-align: center;
+    font-size: 0;
+}
+
+.two-column .column1 {
+width: 100%;
+    max-width: 450px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-column .column2 {
+width: 100%;
+    max-width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contents {
+width: 100%;
+}
+
+.two-column .contents {
+font-size: 14px;
+    text-align: left;
+}
+.two-column img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 0px;
+    color:#ffffff;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 400px) {
 .two-column .column,
@@ -79,6 +126,10 @@ a {
     .three-column img {
         max-width: 50% !important;
     }
+    img[class="img-max"]{
+        max-width: 100% !important;
+        height:auto !important;
+    }
 }
 @media screen and (min-width: 401px) and (max-width: 620px) {
 .three-column .column {
@@ -87,10 +138,14 @@ a {
     .two-column .column {
         max-width: 50% !important;
     }
+    img[class="img-max"]{
+        max-width: 100% !important;
+        height:auto !important;
+    }
 }
 
 
-
+/* PRE-HEADER STYLES */
 .hidden-preheader {
     display: none;
     font-size: 1px;
@@ -102,6 +157,8 @@ a {
     opacity: 0;
     overflow: hidden;
 }
+.preheader {font-size: 10px; font-family: Helvetica, Arial, sans-serif; color: #222222; padding-top: 15px;text-transform:uppercase;}
+.preheader a {color: #222222;}
 
 /* LOGO */
 .logo {
@@ -114,13 +171,31 @@ a {
     font-size:12px;
     font-family:Arial;
     text-transform:uppercase;
-    padding-left:20px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-left:10px;
+    padding-top:0px;
+    padding-bottom:0px;
 }
 
 /* BUTTON PADDING */
 /* Originally only for mobile; if old button is used, then comment out. */
-.mobile-button-pad {
+.rsvp-button {
     padding-right: 20px !important;
+    padding-bottom: 0px;
+    float:right;
 }
+
+/* SOCIAL MEDIA LINKS */
+.social {
+    padding:10px;
+    padding-left:45px;
+    padding-right:45px;
+    text-transform:uppercase;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:10px;
+}
+.social-link {color:#252525;text-decoration:none;}
+
+/* FOOTER */
+.footer-wrap {font-size: 10px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#222222;}
+.footer-wrap-bottom {padding-top:10px;padding-bottom:15px;}
+.footer-copy {color:#222222;text-transform:uppercase;}
