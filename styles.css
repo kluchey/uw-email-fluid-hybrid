@@ -23,6 +23,7 @@ div[style*="margin: 16px 0"] {
     table-layout: fixed;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    background-color: #eeeeee;
 }
 .webkit {
     max-width: 580px;
@@ -33,6 +34,11 @@ Margin: 0 auto;
     width: 100%;
     max-width: 580px;
 }
+
+.padding {
+    padding-top: 25px;
+}
+
 .full-width-image img {
     width: 100%;
     max-width: 580px;
@@ -43,8 +49,8 @@ padding: 10px;
 }
 
 .one-column .inner {
-    padding-left: 13%;
-    padding-right: 13%;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 p {
     Margin: 0;
@@ -52,6 +58,7 @@ p {
     font-size: 12px;
     line-height: 20px;
     font-family: Helvetica, Arial, sans-serif;
+    color: #222222;
 }
 a {
     color: #ee6a56;
@@ -95,6 +102,24 @@ width: 100%;
     display: inline-block;
     vertical-align: middle;
 }
+.two-column .column3 {
+width: 100%;
+    max-width: 210px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-column .column4 {
+width: 100%;
+    max-width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.two-column .column5 {
+width: 100%;
+    max-width: 360px;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .contents {
 width: 100%;
@@ -114,11 +139,27 @@ font-size: 14px;
     color:#ffffff;
 }
 
+.left-column {
+    padding-left: 0% !important;
+    padding-right: 0%;
+    padding-bottom: 0px;
+    float: left;
+    text-align: left;
+}
+.right-column {
+    padding-right: 0% !important;
+    padding-left: 0%;
+    padding-bottom: 0px;
+    float: right;
+    text-align: left;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 400px) {
 .two-column .column,
     .three-column .column {
         max-width: 100% !important;
+        padding-left: 0%;
     }
     .two-column img {
         max-width: 100% !important;
@@ -136,7 +177,8 @@ font-size: 14px;
         max-width: 33% !important;
     }
     .two-column .column {
-        max-width: 50% !important;
+        max-width: 100% !important;
+        padding-left: 0%
     }
     img[class="img-max"]{
         max-width: 100% !important;
@@ -182,6 +224,7 @@ font-size: 14px;
     padding-right: 20px !important;
     padding-bottom: 0px;
     float:right;
+    min-width: 100px;
 }
 
 /* SOCIAL MEDIA LINKS */
@@ -199,3 +242,57 @@ font-size: 14px;
 .footer-wrap {font-size: 10px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#222222;}
 .footer-wrap-bottom {padding-top:10px;padding-bottom:15px;}
 .footer-copy {color:#222222;text-transform:uppercase;}
+
+/* iOS BLUE LINKS */
+.appleBody a, .appleFooter a {color:#222222; text-decoration: none;}
+
+
+/* UNIVERSITY AND FACULTY COLOURS */
+
+.school-gold {color: #FCD450;}
+.school-red {color: #96172E;}
+.ahs {color:#009AA6;}
+.arts {color: #E98300;}
+.engineering {color: #57068C;}
+.environment {}
+.math {color: #E0249A;}
+.science {color: #0073CF;}
+
+.button.ahs {}
+.button.arts {}
+.button.engineering {}
+.button.environment {}
+.button.math {}
+.button.science {}
+
+/* CUSTOM */
+
+.when {
+    padding-bottom:0px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:bold;
+    vertical-align: top;
+}
+.when-copy {
+    padding: 0 0 0px 25px;
+    font-size: 12px;
+    line-height:18px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: normal;
+}
+.where {
+    padding:0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:16px;
+    text-transform:uppercase;
+    font-weight:bold;
+    vertical-align: top;
+}
+.where-copy {
+    padding: 0 0 0px 25px; 
+    font-size: 12px;
+    line-height:18px; 
+    font-family: Helvetica, Arial, sans-serif; font-weight: normal;}
+.lede {font-size: 18px; line-height: 28px;}
