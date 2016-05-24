@@ -203,8 +203,16 @@ font-size: 12px;
     opacity: 0;
     overflow: hidden;
 }
-.preheader {font-size: 10px; font-family: Helvetica, Arial, sans-serif; color: #222222; padding-top: 15px;text-transform:uppercase;}
-.preheader a {color: #222222;}
+.preheader {
+    font-size: 10px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    color: #222222; 
+    padding-top: 15px;
+    text-transform:uppercase;
+}
+.preheader a {
+    color: #222222;
+}
 
 /* LOGO */
 .logo {
